@@ -1,0 +1,25 @@
+.godot/
+.mono/
+bin/
+obj/
+.runtime/
+!addons/original_video/bin/
+.VSCodeCounter/
+fonts/
+开发文档.md
+icon.png
+*.apk
+*.idsig
+
+# Local assets and generated files
+logs/
+artifacts/
+icon.png.import
+*.keystore
+*.jks
+.env
+.env.*
+/addons/original_video/bin/*.dll
+# Original game archives and movies
+*.a
+*.v

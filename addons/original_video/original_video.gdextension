@@ -1,0 +1,42 @@
+[configuration]
+entry_symbol = "original_video_library_init"
+compatibility_minimum = "4.5"
+reloadable = false
+
+[libraries]
+windows.debug.x86_64 = "res://addons/original_video/bin/windows/x86_64/original_video_v1_0.windows.template_debug.x86_64.dll"
+android.debug.arm64 = "res://addons/original_video/bin/android/arm64-v8a/liboriginal_video_v1_0.android.template_debug.arm64.so"
+windows.release.x86_64 = "res://addons/original_video/bin/windows/x86_64/original_video_v1_0.windows.template_release.x86_64.dll"
+android.release.arm64 = "res://addons/original_video/bin/android/arm64-v8a/liboriginal_video_v1_0.android.template_release.arm64.so"
+
+[dependencies]
+windows.debug.x86_64 = {
+    "res://addons/original_video/bin/windows/x86_64/avcodec-61.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/avformat-61.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/avutil-59.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/swresample-5.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/swscale-8.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/libwinpthread-1.dll": ""
+}
+android.debug.arm64 = {
+    "res://addons/original_video/bin/android/arm64-v8a/libavcodec.so": "",
+    "res://addons/original_video/bin/android/arm64-v8a/libavformat.so": "",
+    "res://addons/original_video/bin/android/arm64-v8a/libavutil.so": "",
+    "res://addons/original_video/bin/android/arm64-v8a/libswresample.so": "",
+    "res://addons/original_video/bin/android/arm64-v8a/libswscale.so": ""
+}
+windows.release.x86_64 = {
+    "res://addons/original_video/bin/windows/x86_64/avcodec-61.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/avformat-61.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/avutil-59.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/swresample-5.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/swscale-8.dll": "",
+    "res://addons/original_video/bin/windows/x86_64/libwinpthread-1.dll": ""
+}
+android.release.arm64 = {
+    "res://addons/original_video/bin/android/arm64-v8a/libavcodec.so": "",
+    "res://addons/original_video/bin/android/arm64-v8a/libavformat.so": "",
+    "res://addons/original_video/bin/android/arm64-v8a/libavutil.so": "",
+    "res://addons/original_video/bin/android/arm64-v8a/libswresample.so": "",
+    "res://addons/original_video/bin/android/arm64-v8a/libswscale.so": ""
+}

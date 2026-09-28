@@ -1,0 +1,9 @@
+.sconsign*
+.scons_env*
+__pycache__/
+src/*.o
+src/*.os
+src/*.obj
+bin/*.a
+bin/*.lib
+bin/*.exp
