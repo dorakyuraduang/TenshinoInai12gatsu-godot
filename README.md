@@ -10,9 +10,9 @@
 
 ## 环境与运行
 
-使用 Godot **4.5.1 .NET 版**导入 `project.godot`，构建 C# 项目并运行。桌面目标框架为 .NET 8，Android 为 .NET 9。可在项目目录执行 `dotnet build Tenshi.csproj` 检查编译。
+使用 Godot **4.5.1 .NET 版**导入 `project.godot`，Android 目标框架为 **.NET 9**。
 
-视频插件预编译库仅提供 **Windows x64 / Android ARM64**。Android 导出需要对应 Godot 导出模板、Android SDK/JDK 和 .NET Android 构建环境，签名与图标请自行配置。
+Android 视频插件预编译库支持 **ARM64**。导出需要对应 Godot 导出模板、Android SDK/JDK 和 .NET Android 构建环境，签名与图标请自行配置。
 
 ### 外部资源
 
@@ -28,17 +28,6 @@ music.a
 se.a
 ed.a
 openning.v
-```
-
-桌面端固定读取项目目录同级的 `天使不在的12月` 文件夹：
-
-```text
-父目录/
-├─ TenshinoInai12gatsu-godot/
-│  └─ project.godot
-└─ 天使不在的12月/
-   ├─ tenshi_dvd.a
-   └─ ...
 ```
 
 Android 读取内部共享存储的 `tenshi` 文件夹，主用户通常为 `/storage/emulated/0/tenshi`。按启动提示授予存储权限，再点击“重新检查”。Android 11 及以上使用“管理所有文件”权限，实际路径由系统返回。
